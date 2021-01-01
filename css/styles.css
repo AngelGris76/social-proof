@@ -1,0 +1,270 @@
+/*
+    mobile
+        screen width 375px
+        .post width 325px
+        .post height 247px
+        vertical space between .post 16px
+
+        .info__rev width 325px
+        .info__rev height 75px
+
+        vertical space between  .info__rev 16px
+
+    screen width desktop 1440px
+        sreen width 1440px
+        .post width 350px
+        .post height 234px
+        vertical space between .post 16px
+
+        .info__rev width 443px
+        .info__rev height 54px
+
+        vertical space between  .info__rev 16px
+
+*/
+
+:root
+{
+    font-size: 15px;
+
+    /* Primary */
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    /* Neutral */
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body, .main-container, .info, .coments, .info__reviews, .post__header, .info__rev
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body
+{
+    background-image: url("../assets/images/bg-pattern-top-mobile.svg"), url("../assets/images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat, no-repeat;
+    color: var(--Very-Dark-Magenta);
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.main-container, .info__reviews
+{
+    margin: auto;
+    flex-direction: column;
+    width: 100%;
+}
+
+.info, .coments
+{
+    /*border: 1px solid black;*/ 
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.info__description, .info__reviews, .post, .info__rev
+{
+    margin: 8px 15px;
+    border-radius: 10px;
+    flex-basis: 325px;
+    height: 250px;
+}
+
+.info__reviews
+{
+    margin-top: 0;
+    height: 325px;
+}
+
+.info
+{
+    padding-top: 3.5rem;
+}
+.coments
+{
+    padding-bottom: 3.5rem;
+}
+
+.info__description
+{
+    margin-bottom: 0px;
+}
+
+.info__description p, .post
+{
+    line-height: 1.8;
+    font-size: .95rem;
+    font-weight: 500;
+    color: var(--Dark-Grayish-Magenta);
+}
+
+.info__rev, .post
+{
+    font-size: .85rem;
+    flex-basis: 77px;
+    /* border: 1px solid blue; */
+    width: 100%;
+    background-color: var(--Light-Grayish-Magenta);
+    font-weight: 700;
+    color: var(--Very-Dark-Grayish-Magenta);
+}
+
+.info__rev
+{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info__rev p
+{
+    flex-basis: 300px;
+}
+
+.rate-stars
+{
+    flex-shrink: 0;
+    flex-basis: 140px;
+    margin-top: 12px;
+}
+.rate-stars img
+{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.post
+{
+    font-weight: 400;
+    background-color: var(--Very-Dark-Magenta);
+    text-align: left;
+    color: var(--White);
+    padding: 30px;
+    flex-basis: 265px;
+    height: 190px;
+}
+
+.img-container
+{
+    width: 40px;
+}
+
+.img-container img
+{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.post__header
+{   padding-top: 5px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.user-name
+{
+    margin-left: 20px;
+}
+
+.user-name h2, .user-name p
+{
+    font-size: inherit;
+    margin: 0;
+}
+
+.user-name p
+{
+    color: var(--Soft-Pink);
+}
+
+@media (min-width: 700px)
+{
+    .info__description, .info__reviews
+    {
+        flex-basis: 430px;
+    }
+}
+
+@media (min-width: 1280px)
+{
+    body
+    {
+        background-image: url("../assets/images/bg-pattern-top-desktop.svg"), url("../assets/images/bg-pattern-bottom-desktop.svg");
+        background-position: top left, bottom right;
+        text-align: left;
+    }
+
+    .info__reviews, .info__description
+    {
+        margin-left: 38px;
+        margin-right: 38px;
+    }
+
+    .info__reviews
+    {
+        flex-basis: 535px;
+    }
+
+    .info__description h1
+    {
+        font-size: 3.2rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .info__rev 
+    {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        margin-left: 0;
+        margin-right: 0;
+        flex-basis: 54px;
+        width: 443px;
+    }
+
+    .rate-stars
+    {
+        margin: 0px 0px 0px 30px;
+    }
+
+    .info
+    {
+        justify-content: space-between;
+    }
+
+    .coments, .info
+    {
+        padding: 0;
+        height: 340px;
+        max-width: 1200px;
+    }
+
+    .coments
+    {
+        height: 300px;
+    }
+
+    .post
+    {
+        flex-basis: 290px;
+        height: 174px;
+    }
+
+    .post:first-child, .info__rev:first-child
+    {
+        align-self: flex-start;
+    }
+
+    .post:last-child, .info__rev:last-child
+    {
+        align-self: flex-end;
+    }
+}
