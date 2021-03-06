@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,97 +11,89 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="main-container">
+    <main class="main-container">
         <section class="info">
-            <div class="info__description">
-                <h1>
-                    10,000+ of our users love our products.
+            <header class="info__description">
+                <h1 class="info__title">
+                    10,000+ of our<br>
+                    users love our<br>
+                    products.
                 </h1>
-                <p>
-                    We only provide great products combined with excellent customer services. See what our satisfied 
-                    customer are saying about our services.
+                <p class="info__text">
+                    We only provide great products combined with excellent customer services. See what our satisfied customer are saying about our services.
                 </p>
-            </div>
-            <div class="info__reviews">
-                <div class="info__rev">
-                    <div class="rate-stars">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
+            </header>
+            <aside class="info__reviews">
+                <div class="rate">
+                    <div class="rate__stars">
+                        <img src="assets/images/icon-star.svg" alt="star" class="rate__star">
+                        <img src="assets/images/icon-star.svg" alt="star" class="rate__star">
+                        <img src="assets/images/icon-star.svg" alt="star" class="rate__star">
+                        <img src="assets/images/icon-star.svg" alt="star" class="rate__star">
+                        <img src="assets/images/icon-star.svg" alt="star" class="rate__star">
                     </div>
-                    <p>Rated 5 Stars in Reviews</p>
+                    <p class="rate__text">Rated 5 Stars in Reviews</p>
                 </div>
-                <div class="info__rev">
-                    <div class="rate-stars">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
+                <div class="rate">
+                    <div class="rate__stars">
+                        <img src="assets/images/icon-star.svg" alt="star" class="rate__star">
+                        <img src="assets/images/icon-star.svg" alt="star" class="rate__star">
+                        <img src="assets/images/icon-star.svg" alt="star" class="rate__star">
+                        <img src="assets/images/icon-star.svg" alt="star" class="rate__star">
+                        <img src="assets/images/icon-star.svg" alt="star" class="rate__star">
                     </div>
-                    <p>Rated 5 Stars in Report Guru</p>
+                    <p class="rate__text">Rated 5 Stars in Report Guru</p>
                 </div>
-                <div class="info__rev">
-                    <div class="rate-stars">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
+                <div class="rate">
+                    <div class="rate__stars">
+                        <img src="assets/images/icon-star.svg" alt="star" class="rate__star">
+                        <img src="assets/images/icon-star.svg" alt="star" class="rate__star">
+                        <img src="assets/images/icon-star.svg" alt="star" class="rate__star">
+                        <img src="assets/images/icon-star.svg" alt="star" class="rate__star">
+                        <img src="assets/images/icon-star.svg" alt="star" class="rate__star">
                     </div>
-                    <p>Rated 5 Stars in BestTech</p>
+                    <p class="rate__text">Rated 5 Stars in BestTech</p>
                 </div>
-            </div>
+            </aside>
         </section>
-        <section class="coments">
-            <div class="post">
-                <div class="post__header">
-                    <div class="img-container"><img src="assets/images/image-colton.jpg" alt="Colton Smith" 
-                        class="perfil-photo">
+        <section class="comments">
+            <article class="post">
+                <header class="post__header">
+                    <img src="assets/images/image-colton.jpg" alt="Colton Smith" class="post__avatar">
+                    <div class="post__user">
+                        <h2 class="post__authorname">Colton Smith</h2>
+                        <p class="post__authortype">Verified Buyer</p>
                     </div>
-                    <div class="user-name">
-                        <h2>Colton Smith</h2>
-                        <p>Verified Buyer</p>
+                </header>
+                <blockquote class="post__comment">
+                    "We needed the same printed design as the one we had orderer a week prior. Not only did they find the original order, but we also received it in time. Excellent!"
+                </blockquote>
+            </article>
+            <article class="post">
+                <header class="post__header">
+                    <img src="assets/images/image-irene.jpg" alt="Irene Roberts" class="post__avatar">
+                    <div class="post__user">
+                        <h2 class="post__authorname">Irene Roberts</h2>
+                        <p class="post__authortype">Verified Buyer</p>
                     </div>
-                </div>
-                <p class="post__coment">
-                    "We needed the same printed design as the one we had orderer a week prior. Not only did they find the 
-                    original order, but we also received it in time. Excellent!"
-                </p>
-            </div>
-            <div class="post">
-                <div class="post__header">
-                    <div class="img-container"><img src="assets/images/image-irene.jpg" alt="Irene Roberts" 
-                        class="perfil-photo">
+                </header>
+                <blockquote class="post__comment">
+                    "Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."
+                </blockquote>
+            </article>
+            <article class="post">
+                <header class="post__header">
+                    <img src="assets/images/image-anne.jpg" alt="Anne Wallace" class="post__avatar">
+                    <div class="post__user">
+                        <h2 class="post__authorname">Anne Wallace</h2>
+                        <p class="post__authortype">Verified Buyer</p>
                     </div>
-                    <div class="user-name">
-                        <h2>Irene Roberts</h2>
-                        <p>Verified Buyer</p>
-                    </div>
-                </div>
-                <p class="post__coment">
-                    "Customer service is always excellent and very quick turn around. Completely delighted with the simplicity
-                    of the purchase and the speed of delivery."
-                </p>
-            </div>
-            <div class="post">
-                <div class="post__header">
-                    <div class="img-container"><img src="assets/images/image-anne.jpg" alt="Anne Wallace"
-                        class="perfil-photo">
-                    </div>
-                    <div class="user-name">
-                        <h2>Anne Wallace</h2>
-                        <p>Verified Buyer</p>
-                    </div>
-                </div>
-                <p class="post__coment">
-                    "Put an order with this company and can only praise them for the very high standard. Will definitely user
-                    them again and recommend them to everyone!"
-                </p>
-            </div>
+                </header>
+                <blockquote class="post__comment">
+                    "Put an order with this company and can only praise them for the very high standard. Will definitely user them again and recommend them to everyone!"
+                </blockquote>
+            </article>
         </section>
-    </div>
+    </main>
 </body>
 </html>
